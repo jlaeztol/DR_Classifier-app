@@ -7,7 +7,7 @@ import cv2
 def main():
     # set up the Streamlit app
     st.title("DRTect")
-    st.title("Ground Satellite Image Classifier 📷🛰️")
+    st.title("Diabetic Retinopathy Severity Classification 📷🛰️")
     st.write("Using Pre-trained Convolutional Neural Network Model, this app enables to identify the Ground Satellite Images.")
 
     @st.cache_resource
