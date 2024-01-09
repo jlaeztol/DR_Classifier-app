@@ -8,7 +8,7 @@ def main():
     # set up the Streamlit app
     st.title("DRTect")
     st.title("Diabetic Retinopathy Severity Classification 📷🛰️")
-    st.write("Using Pre-trained Convolutional Neural Network Model, this app enables to identify the Ground Satellite Images.")
+    st.write("Using Pre-trained Convolutional Neural Network Model, this web-app enables to identify the Severity Level of Diabetic Retinopathy of Patient.")
 
     @st.cache_resource
     def load_model():
