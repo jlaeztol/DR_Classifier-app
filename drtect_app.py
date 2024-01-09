@@ -7,7 +7,7 @@ import cv2
 def main():
     # set up the Streamlit app
     st.title("DRTect")
-    st.title("Diabetic Retinopathy Severity Classification 📷🛰️")
+    st.title("Diabetic Retinopathy Severity Classification 📷")
     st.write("Using Pre-trained Convolutional Neural Network Model, this web-app enables to identify the Severity Level of Diabetic Retinopathy of Patient.")
 
     @st.cache_resource
@@ -28,7 +28,7 @@ def main():
     class_names = ["No_DR", "Mild", "Moderate", "Severe", "Proliferate_DR"]
 
 
-    file = st.file_uploader("Upload Ground Satellite Image from your computer", type=["jpg", "png", "jpeg"])
+    file = st.file_uploader("Upload Retinal Image from your computer", type=["jpg", "png", "jpeg"])
 
     if file is None:
         st.text("Please upload an image file")
