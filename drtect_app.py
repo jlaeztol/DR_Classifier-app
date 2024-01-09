@@ -21,7 +21,7 @@ def main():
 
     @st.cache_resource
     def load_model():
-        model = tf.keras.models.load_model('weights-improvement-14-0.99.hdf5')
+        model = tf.keras.models.load_model('final3_model_2.h5')
         return model
 
     def import_and_predict(image_data, model):
